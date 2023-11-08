@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projeto Mi casa</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="./logo 2.png" alt="Logo">
+                <span>EliteMotors</span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        
+                           
+                    
+                    <li class="nav-item"><a class="nav-link" href="#manga-container">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-container">Projetos</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="1500" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="./carro 1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./carro 2.jpg" alt="imagem 2" class="d-block w-100">
+                    <section class="carousel-caption">
+
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./carro 3.jpeg " alt="imagem 3" class="d-block w-100">
+                    <section class="carousel-caption">
+
+
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./carro 4.jpeg" alt="imagem 4" class="d-block w-100">
+                    <section class="carousel-caption">
+                        >
+
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Vendas</h5>
+                            <p class="card-text secondary-color">Procurando um carro novo? Temos uma grande seleção de veículos de alta qualidade! Venha conferir nossa variedade de carros, preços competitivos e excelentes condições de financiamento. Visite-nos hoje mesmo e encontre o carro dos seus sonhos!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                                aqui</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-android2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Alugueis</h5>
+                            <p class="card-text secondary-color">"Precisando de um carro para suas aventuras? Alugue conosco e tenha a liberdade de explorar sem preocupações. Temos uma frota diversificada, tarifas acessíveis e um atendimento excepcional. Reserve agora e garanta sua experiência de aluguel de carros perfeita!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                                mais</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Meios de Pagamentos </h5>
+                            <p class="card-text secondary-color">Aceitamos PIX, dinheiro, cartão de crédito e oferecemos
+                                parcelamento para facilitar o processo de aluguel. Queremos garantir a comodidade dos
+                                nossos clientes ao escolher a forma de pagamento que mais lhes convém.</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                                mesmo</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Contato</h5>
+                            <p class="card-text secondary-color">Estamos presentes em várias redes sociais como, Instagram (@EliteMotors), WhatsApp (17 991480671) e Twitter. Siga-nos nessas
+                                plataformas para ficar por dentro das novidades, promoções e interagir conosco. Estamos
+                                ansiosos para conectar com você!</p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal4">Veja
+                                além</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Trabalho em destaque</h2>
+            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="./CARRO 1.jpeg" alt=""class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./CARRO 2 (2).jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./CARRO 3.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./carro 4.jpeg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./CARRO 4.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./CARRO 5.jpg" al="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Informações</h2>
+            <p class="subtitle-secondary-color text-dark">Conheça nossos destaques </p>
+        </section>
+
+        <section class="col-12">
+        <section class="row align-content-md-start">
+
+            <section class="col-12 col-md-5">
+                <p>Bem-vindo à nossa loja de carros, onde os sonhos automotivos se tornam realidade! Oferecemos uma ampla seleção de veículos de qualidade, desde carros compactos até SUVs luxuosos. Compre com confiança, sabendo que cada carro passou por rigorosas inspeções e está pronto para a estrada. Visite-nos hoje mesmo e descubra o carro dos seus sonhos na nossa loja!</p>
+                <a href="https://getbootstrap.com/docs/5.3/components/modal/" class="btn btn-primary">Documentação
+                    Modal</a>
+            </section>
+
+            <!-- Definição do Slider -->            
+                <section class="col-12 col-md-6">
+                    <section class="carousel slide" id="#rkz" data-bs-interval="1100" data-bs-ride="carousel">
+                        <section class="carousel-indicators">
+
+                            
+                                
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </section>
+
+                       
+
+                                </section>
+                            </section>
+
+                        </section>
+
+                    </section>
+
+                </section>
+            </section>
+        </section>
+        </section>
+    
+
+    <section class="container" id="manga-container">
+        <section class="col-12" id="featured-images">
+            <section class="row g-5">
+
+                <section class="col-12 col-md-3">
+                  
+                        <img src="./moto 1.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                 
+                        <img src="./moto 2.jpg" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+                <section class="col-12 col-md-3">
+                 
+
+                        <img src="./moto 3.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                   
+
+                        <img src="./moto 4.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    
+
+                        <img src="./moto 5.jpeg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    
+                        
+
+                        <img src="./moto 6.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    
+
+                        <img src="./moto 7.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+                <section class="col-12 col-md-3">
+                   
+                        
+
+                        <img src="./moto 9.jpg" alt="" class="img-fluid"></a>
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                
+
+     
+
+                <!-- Fim do container Informações -->
+            </section>
+        </section>
+        
+
+        <!-- FOOTER -->
+
+        <!-- Informações -->
+        <section class="col-12">
+            <h2 class="title primary-color">Footer</h2>
+            <p class="subtitle-secondary-color">Contatos</p>
+        </section>
+
+        <footer class="container-fluid bg-dark-color" id="footer">
+            <section class="container">
+                <section class="row">
+                    <!-- FOOTER TOP -->
+                    <section class="col-12" id="footer-top">
+                        <section class="row justify-content-between">
+                            <section class="col-4">
+                                <h2>
+                                    EliteMotors
+                                </h2>
+                            </section>
+
+                            <section class="col-12 col-md-4">
+                                <p>A loja é extremamente confiável e possui um grande prestígio no mercado de trabalho.
+                                    Sua reputação é construída com base na confiança e na qualidade dos serviços
+                                    prestados, o que a torna uma referência no setor. A loja se destaca não apenas pela
+                                    excelência de seus produtos, mas também pelo compromisso em oferecer o melhor
+                                    atendimento ao cliente. Isso a torna uma escolha confiável para muitos clientes e
+                                    profissionais do setor...</p>
+                                <a href="https://getbootstrap.com/docs/5.3/forms/overview/"
+                                    class="btn btn-primary">Documentação Forms</a>
+                            </section>
+
+                            <section class="col-4" id="social-icons">
+                                <i class="bi bi-facebo
+                                ok"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-twitter"></i>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!--modal 1-->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 2-->
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 3-->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Modal 4-->
+                    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Bootstrap JS-->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                        crossorigin="anonymous" defer></script>
+</body>
+
+</html>
